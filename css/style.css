@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(193, 221, 250);
+}
+.sliderbgcolor {
+    background-color: rgb(193, 221, 250);
+}
+.logomap {
+    width: 13em;
+    height: 2.6em;
+}
+
+.navbgcolor {
+    background-color: rgb(224, 240, 255);
+}
+
+.ancore {
+    color:rgb(36, 33, 33);
+    text-transform: uppercase;
+    transition: transform .2s;
+}
+
+.ancore:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+/* .form-control:focus {
+    border-color: #c4c1c4;
+    box-shadow: 0px 1px 1px rgba(163, 204, 240, 0.075) inset, 0px 0px 8px rgba(38, 159, 220, 0.5);
+} */
+
+.search-input {
+    background: #b5d1f7;
+}
+
+.search-input:focus {
+    background: #aeccf7;
+    border-color: #79a2fb;
+    box-shadow: 0px 1px 1px rgba(163, 204, 240, 0.075) inset, 0px 0px 3px rgba(38, 159, 220, 0.5);
+}
+
+.slidertext {
+    font-size: 4.625rem;
+    /* line-height: 5.125rem; */
+}
+.searchbtn {
+    margin-top: 2px;
+}
+
+.backgdoundcolor-green{
+    background-color:rgba(73, 255, 12, 0.4);
+}
+
+.categorybuttonfont {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:rgb(25, 23, 23);
+}
+
+.productlink {
+    background-color:rgb(97, 240, 240);
+}
+
+.footerbg {
+    background-color: rgb(0, 0, 0);
+}
