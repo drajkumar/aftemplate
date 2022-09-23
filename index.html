@@ -12,31 +12,31 @@
 
 <body>
     <header class="position-sticky top-0" style="z-index: 101;">
-        <nav class="navbar navbar-expand-lg navbgcolor text-dark position-sticky p-4 top-0 start-0">
+        <nav class="navbar navbar-expand-lg navbgcolor text-dark position-sticky p-4 top-0 start-0 border-bottom border-light">
             <div class="container">
                 <a class="logomap mt-1" href="index.html"><img class="w-75 mt-1" src="img/logo-dark2.png"></a>
                 <button class="navbar-toggler shadow-none border-0 me-3" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
+                    <i class="bi bi-list text-white"></i>
                 </button>
                 <div class="offcanvas offcanvas-start navbgcolor" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <a class="text-white logomap mt-1" href=""><img class="w-50" src="img/logo-dark2.png"></a></h5>
-                        <i class="bi bi-x-lg shadow-none me-5" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                        <i class="bi bi-x-lg shadow-none me-5 text-white" data-bs-dismiss="offcanvas" aria-label="Close"></i>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center dropdown-menu-light">
                         <li class="nav-item">
-                            <a class="nav-link ancore" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link ancore mactive" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i> HOME</a>
                         </li>
                         <li class="nav-item dropdown">
                             <!-- <a class="nav-link ancore" href="category.html">REVIEWS & GUIDES
                             </a> -->
-                            <a class="nav-link dropdown-toggle ancore" href="category.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">REVIEWS & GUIDES
+                            <a class="nav-link dropdown-toggle ancore" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="bi bi-display"></i> REVIEWS
                             </a>
-                            <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark rounded-0" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="category.html">Action</a></li>
                             <li><a class="dropdown-item" href="category.html">Another action</a></li>
                             <li><a class="dropdown-item" href="category.html">Something else here</a></li>
@@ -47,29 +47,64 @@
                             <a class="nav-link text-white" href="#"><i class="bi bi-box"></i> Product</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link ancore" href="contact.html">ACCESSORIES</a>
+                            <a class="nav-link ancore" href="contact.html"><i class="bi bi-tools"></i> ACCESSORIES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ancore" href="blog.html">BLOG POSTS</a>
+                            <a class="nav-link ancore" href="blog.html"><i class="bi bi-book"></i> BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ancore" href="blog.html">ABOUT US</a>
+                            <a class="nav-link ancore" href="blog.html"><i class="bi bi-headset"></i> ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ancore" href="blog.html">CONTACT US</a>
+                            <a class="nav-link ancore" href="blog.html"><i class="bi bi-envelope"></i> CONTACT</a>
                         </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link ancore" href="blog.html"><i class="bi bi-arrow-bar-right"></i>
+                                    Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ancore" href="blog.html"><i class="bi bi-arrow-bar-up"></i>
+                                    Register</a>
+                        </li> -->
+
                         <!-- <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"><i class="bi bi-person-fill"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-light rounded-0" aria-labelledby="navbarDropdown2">
-                                <li class=""><a class="dropdown-item" href="#"><i class="bi bi-person-fill"></i> Username</a></li>
-                                <li><a class="dropdown-item" href="login.html"><i class="bi bi-arrow-bar-right"></i> Login</a></li>
-                                <li><a class="dropdown-item" href="register.html"><i class="bi bi-arrow-bar-up"></i> Register</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-arrow-bar-left"></i> Log out</a></li>
-                            
+                            <a class="nav-link text-white" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-person-fill"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-dark rounded-0" aria-labelledby="navbarDropdown2">
+                                <li class=""><a class="dropdown-item text-white" href="#"><i class="bi bi-person-fill"></i> Username</a>
+                                </li>
+                                <li><a class="dropdown-item text-white" href="login.html"><i class="bi bi-arrow-bar-right"></i>
+                                    Login</a></li>
+                                <li><a class="dropdown-item text-white" href="register.html"><i class="bi bi-arrow-bar-up"></i>
+                                    Register</a></li>
+                                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-arrow-bar-left"></i> Log out</a></li>
+
                             </ul>
                         </li> -->
+
+                            <li class="nav-item dropdown">
+                            <a class="nav-link ancore" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-person-fill"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-dark rounded-0" aria-labelledby="navbarDropdown2">
+                                <li class=""><a class="dropdown-item text-white" href="#"><i class="bi bi-person-fill"></i> Username</a>
+                                </li>
+                                <li><a class="dropdown-item text-white" href="login.html"><i class="bi bi-arrow-bar-right"></i>
+                                    Login</a></li>
+                                <li><a class="dropdown-item text-white" href="register.html"><i class="bi bi-arrow-bar-up"></i>
+                                    Register</a></li>
+                                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-arrow-bar-left"></i> Log out</a></li>
+
+                            </ul>
+                        </li>
+                      
+                        
                         </ul>
+
+                        <!-- <div class="d-flex" role="search">
+                            <p class="text-white mt-1">ouremailexemple@email.com</p>
+                        </div> -->
                        
                     </div>
                 </div>
@@ -77,13 +112,13 @@
         </nav>
     </header>
 
-    <section class="mt-5 mb-1 sliderbgcolor">
+    <section class="mt-5 mb-1 sliderbgcolor mb-3">
         <div class="container">
             <div class="product-slider">
                 <div class="row">
                     <div class="col-lg-5 col-md-12 order-1 order-sm-2 mb-2">
                         <h1 class="py-1 py-sm-0 mt-4 slidertext" style="color: red;">What is Lorem Ipsum</h1>
-                        <p class="text-dark fs-5 mb-2">
+                        <p class="text-white fs-5 mb-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
                         </p>
                         <form action="" method="GET" class="mt-5">
@@ -107,14 +142,14 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-12 order-1 order-sm-2 mb-2">
                         <h1 class="py-1 py-sm-0 mt-4 slidertext" style="color: rgb(241, 224, 33);">What is Lorem Ipsum</h1>
-                        <p class="text-dark fs-5 mb-2">
+                        <p class="text-white fs-5 mb-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
                         </p>
                         <form action="" method="GET" class="mt-5">
                             <div class="col-sm-10 col-10 position-relative">
           
                                 <input type="text" class="form-control float-start py-4 rounded-0 placeholdersize shadow-none" id="business" name="business" placeholder="Search by keyword" required>
-                                <div class=" float-start">
+                                <div class="float-start">
                                 <button type="submit" class="btn px-4 py-3 rounded-0 position-absolute float-start searchbtn" style="background-color: rgb(241, 224, 33);"> <i class="bi bi-search fs-4 text-white"></i> </button>
                             </div>
                             </div>
@@ -134,7 +169,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-12 order-1 order-sm-2">
                         <h1 class="py-1 py-sm-0 mt-4 slidertext" style="color: rgb(0, 255, 8);">What is Lorem Ipsum</h1>
-                        <p class="text-dark fs-5 mb-2">
+                        <p class="text-white fs-5 mb-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
                         </p>
                         <form action="" method="GET" class="mt-5">
@@ -160,83 +195,98 @@
     <section class="mt-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="row">
-                        <div class="col-2 backgdoundcolor-green rounded-circle position-relative">
-                           <i class="bi bi-check2 position-absolute top-50 start-50 translate-middle fs-2 text-white"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5>Expert Tip</h5>
-                            <p>Expert Tips Provide Great Experience</p>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="row">
-                        <div class="col-2 backgdoundcolor-green rounded-circle position-relative">
-                           <i class="bi bi-check2 position-absolute top-50 start-50 translate-middle fs-2 text-white"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5>Buyer's Guide</h5>
-                            <p>Buyer's Guide for Compatible Use</p>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+                    <div class="card w-100 border-0 shadow-sm rounded-0">
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-2 rounded-3 position-relative">
+                                <i class="bi bi-person-bounding-box position-absolute top-50 start-50 translate-middle fs-1 iconcolor"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5>Expert Tip</h5>
+                                    <p>Expert Tips Provide Great Experience</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="row">
-                        <div class="col-2 backgdoundcolor-green rounded-circle position-relative">
-                           <i class="bi bi-check2 position-absolute top-50 start-50 translate-middle fs-2 text-white"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5>Reliable</h5>
-                            <p>Through Right Buyer's Guide</p>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+                    <div class="card w-100 border-0 shadow-sm rounded-0">
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-2 rounded-3 position-relative">
+                                <i class="bi bi-person-bounding-box position-absolute top-50 start-50 translate-middle fs-1 iconcolor"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5>Buyer's Guide</h5>
+                                    <p>Buyer's Guide for Compatible Use</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="row">
-                        <div class="col-2 backgdoundcolor-green rounded-circle position-relative">
-                           <i class="bi bi-check2 position-absolute top-50 start-50 translate-middle fs-2 text-white"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5>Expert Tip</h5>
-                            <p>Expert Tips Provide Great Experience</p>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+                    <div class="card w-100 border-0 shadow-sm rounded-0">
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-2 rounded-3 position-relative">
+                                <i class="bi bi-person-bounding-box position-absolute top-50 start-50 translate-middle fs-1 iconcolor"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5>Reliable</h5>
+                                    <p>Through Right Buyer's Guide</p>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
-                    
                 </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="row">
-                        <div class="col-2 backgdoundcolor-green rounded-circle position-relative">
-                           <i class="bi bi-check2 position-absolute top-50 start-50 translate-middle fs-2 text-white"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5>Buyer's Guide</h5>
-                            <p>Buyer's Guide for Compatible Use</p>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+                    <div class="card w-100 border-0 shadow-sm rounded-0">
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-2 rounded-3 position-relative">
+                                <i class="bi bi-person-bounding-box position-absolute top-50 start-50 translate-middle fs-1 iconcolor"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5>Expert Tip</h5>
+                                    <p>Expert Tips Provide Great Experience</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="row">
-                        <div class="col-2 backgdoundcolor-green rounded-circle position-relative">
-                           <i class="bi bi-check2 position-absolute top-50 start-50 translate-middle fs-2 text-white"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5>Reliable</h5>
-                            <p>Through Right Buyer's Guide</p>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+                    <div class="card w-100 border-0 shadow-sm rounded-0">
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-2 rounded-3 position-relative">
+                                <i class="bi bi-person-bounding-box position-absolute top-50 start-50 translate-middle fs-1 iconcolor"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5>Buyer's Guide</h5>
+                                    <p>Buyer's Guide for Compatible Use</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+                    <div class="card w-100 border-0 shadow-sm rounded-0">
+                        <div class="card-body">
+                            <div class="row py-2">
+                                <div class="col-2 rounded-3 position-relative">
+                                <i class="bi bi-person-bounding-box position-absolute top-50 start-50 translate-middle fs-1 iconcolor"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5>Buyer's Guide</h5>
+                                    <p>Buyer's Guide for Compatible Use</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -246,7 +296,7 @@
             <div class="row">
                 <h1 class="text-center mt-5">Most Recent Post</h1>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="card rounded-0 shadow" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/blogs/1.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Top 10 Best Flatbed Scanner for Photos Reviews: 2022</h5>
@@ -262,7 +312,7 @@
                 </div>
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="card rounded-0 shadow" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/blogs/2.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Top 10 Best Flatbed Scanner for Photos Reviews: 2022</h5>
@@ -278,7 +328,7 @@
                 </div>
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="card rounded-0 shadow" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/blogs/3.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Top 10 Best Flatbed Scanner for Photos Reviews: 2022</h5>
@@ -294,7 +344,7 @@
                 </div>
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="card rounded-0 shadow" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/blogs/5.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Top 10 Best Flatbed Scanner for Photos Reviews: 2022</h5>
@@ -310,7 +360,7 @@
                 </div>
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="card rounded-0 shadow" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/blogs/5.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Top 10 Best Flatbed Scanner for Photos Reviews: 2022</h5>
@@ -326,7 +376,7 @@
                 </div>
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
-                    <div class="card rounded-0 shadow" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/blogs/5.jpg" class="img-fluid rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Top 10 Best Flatbed Scanner for Photos Reviews: 2022</h5>
@@ -351,46 +401,72 @@
         <div class="container">
             <div class="row">
                 <h1 class="text-center mt-5 mb-2">All Catagories</h1>
+
+                
                
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Heat Press Machine</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Heat Press Machine</h5>
+                        </div>
                     </div>
                     
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Sublimation Printer</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Sublimation Printer</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Scanner</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Scanner</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Transfer Paper</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Transfer Paper</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Sublimation Paper</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Sublimation Paper</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Sublimation Ink</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Sublimation Ink</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Photocopier</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Photocopier</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="d-grid gap-2">
-                        <a href="button" class="btn btn-light border border-1 px-5 categorybuttonfont">Transfer Tape</a>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="card w-100 border-0 shadow-sm rounded-0 bg-light">
+                        <div class="card-body d-flex">
+                            <i class="bi bi bi-columns fs-1"></i>
+                            <h5 class="p-2 mt-2">Transfer Tape</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -403,7 +479,7 @@
                 <h1 class="text-center mt-5 mb-2">Featured Products</h1>
                
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -416,7 +492,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -429,7 +505,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -442,7 +518,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -455,7 +531,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -468,7 +544,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -481,7 +557,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -494,7 +570,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-2">
-                    <div class="card rounded-0" style="width: 100%;">
+                    <div class="card rounded-0 border-0 w-100 shadow">
                         <img src="img/products/product_one.jpeg" class="card-img-top rounded-0" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Product Title</h5>
@@ -510,7 +586,7 @@
         </div>
     </section>
 
-    <section class="bg-light mb-5">
+    <section class="bg-light mb-5 py-5">
         <div class="container">
             <div class="row">
                 <h1 class="text-center mt-5 mb-3">LEGAL & AFFILIAT</h1>
@@ -543,24 +619,67 @@
     </section>
 
     <footer class="footerbg mt-5">
-        <div class="container">
+        <div class="container mt-1 py-5 fs-5">
             <div class="row">
-                <div class="col-md-4">
-                    <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    </select>
+                <div class="col-md-3 text-center">
+                    <img class="w-50 mt-3" src="img/logo-dark2.png">
+                    <ul class="navbar-nav text-center">
+                    <li class="nav-item mt-2">
+                        <a class="text-white text_dcaretion" href="#">Email: test@email.com</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="text-white text_dcaretion" href="#">Tel: +9823457238957</a>
+                    </li>
+
+                    </ul>
+            
                 </div>
-                <div class="col-md-4">
-                    
+                <div class="col-md-3">
+                    <h5 class="text-center text-white mt-2 p-0">OUR SERVICES</h5>
+                    <ul class="navbar-nav text-center">
+                                <li class="nav-item">
+                        <a class="text-white text_dcaretion" href="https://vccbaro.com/product-category/cloud-accounts">Cloud Accounts</a>
+                    </li>  
+                                <li class="nav-item">
+                        <a class="text-white text_dcaretion" href="https://vccbaro.com/product-category/developer-accounts">Developer Accounts</a>
+                    </li>  
+                                <li class="nav-item">
+                        <a class="text-white text_dcaretion" href="https://vccbaro.com/product-category/trading-accounts">Trading Accounts</a>
+                    </li>  
+                                </ul>
                 </div>
-                <div class="col-md-4">
-                    
+                <div class="col-md-3">
+                    <h5 class="text-center text-white mt-2">INFORMATION</h5>
+                    <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="text_dcaretion text-white" href="https://vccbaro.com/help-faq">Help & FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text_dcaretion text-white" href="https://vccbaro.com/rfund-policy">Refund-Policy</a>
+                    </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center text-white mt-2">INFORMATION</h5>
+                    <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="text_dcaretion text-white" href="https://vccbaro.com/help-faq">Help & FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text_dcaretion text-white" href="https://vccbaro.com/rfund-policy">Refund-Policy</a>
+                    </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <div class="footer py-3">
+            <p class="text-center text-white mt-3 fs-5">Vccbaro Copyrights@2022</p>
+        </div>
+
+    </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>

@@ -1,8 +1,8 @@
 body {
-    background-color: rgb(193, 221, 250);
+    background-color: rgb(0, 0, 0);
 }
 .sliderbgcolor {
-    background-color: rgb(193, 221, 250);
+    background-color: rgb(0, 0, 0);
 }
 .logomap {
     width: 13em;
@@ -10,18 +10,22 @@ body {
 }
 
 .navbgcolor {
-    background-color: rgb(224, 240, 255);
+    background-color: rgb(6, 6, 6);
 }
 
 .ancore {
-    color:rgb(36, 33, 33);
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
     transition: transform .2s;
 }
 
 .ancore:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(40, 8, 250);
     transform: scale(1.1);
+}
+
+.mactive {
+    color: rgb(40, 8, 250);
 }
 
 /* .form-control:focus {
@@ -48,7 +52,7 @@ body {
 }
 
 .backgdoundcolor-green{
-    background-color:rgba(73, 255, 12, 0.4);
+    background-color:rgba(0, 0, 0);
 }
 
 .categorybuttonfont {
@@ -58,9 +62,15 @@ body {
 }
 
 .productlink {
-    background-color:rgb(97, 240, 240);
+    background-color:rgb(89, 105, 248);
+    color:rgb(255, 255, 255);
 }
 
 .footerbg {
     background-color: rgb(0, 0, 0);
 }
+
+.iconcolor {
+    color:rgb(49, 179, 250);
+}
+
