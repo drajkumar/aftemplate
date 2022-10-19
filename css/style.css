@@ -1,4 +1,8 @@
 body {
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.comoncolor{
     background-color: rgb(0, 0, 0);
 }
 .sliderbgcolor {
@@ -92,4 +96,17 @@ body {
 .iconcolor {
     color:rgb(49, 179, 250);
 }
+
+.categoriescolor {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.star{
+    color: rgb(240, 140, 8);
+}
+
+/* .star:hover{
+    color: rgb(240, 140, 8);
+} */
 
