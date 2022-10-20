@@ -10,7 +10,7 @@ body {
 }
 .logomap {
     width: 13em;
-    height: 2.6em;
+    height: auto;
 }
 
 .navbgcolor {
